@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+    --Transparentwhite: hsla(0, 0%, 100%, 0.75);
+    --Verylightgray: hsl(0, 0%, 95%);
+
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    background: var(--Verylightgray);
+}
+
+.main-container {
+    width: 325px;
+    margin: 87px auto 40px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+article {
+    width: 100%;
+    height: 440px;
+    padding: 48px;
+}
+
+#sedans {
+    background-color: var(--Brightorange);
+}
+
+#suvs {
+    background-color: var(--Darkcyan);
+}
+
+#luxury {
+    background-color: var(--Verydarkcyan);
+}
+
+img {
+    margin-bottom: 36px;
+}
+
+h2 {
+    color: var(--Verylightgray);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 2.4em;
+    text-transform: uppercase;
+}
+
+p {
+    color: var(--Transparentwhite);
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+
+button {
+    width: 148px;
+    height: 46px;
+    border-radius: 45px;
+    border-style: none;
+    background-color: var(--Verylightgray);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+/* botones */
+#sedans-btn {
+    color: var(--Brightorange);
+}
+
+#suvs-btn {
+    color: var(--Darkcyan);
+}
+
+#luxury {
+    color: var(--Verydarkcyan);
+}
+
+/* efecto hover */
+button:hover {
+    background-color: var(--Verylightgray);
+    cursor: pointer;
+}
+
+#sedans-btn:hover {
+    background-color: var(--Brightorange);
+    color: var(--Verylightgray);
+}
+
+#suvs-btn:hover {
+    background-color: var(--Darkcyan);
+    color: var(--Verylightgray);
+}
+
+#luzury-btn:hover {
+    background-color: var(--Verydarkcyan);
+    color: var(--Verylightgray);
+}
+
+/* footer */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* desktop */
+@media (min-width:944px) {
+   .main-container {
+    width: 924px;
+    display: flex;
+    margin-top: 170px;
+   }
+   article {
+    
+   }
+}
+

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Verydarkblue: hsl(233, 47%, 7%);
+    --Darkdesaturatedblue: hsl(244, 38%, 16%);
+    --Softviolet: hsl(277, 64%, 61%);
+    --White: hsl(0, 0%, 100%);
+    --Slightlytransparentwhite: hsla(0, 0%, 100%, 0.75);
+    --Slightlytransparentwhite: hsla(0, 0%, 100%, 0.6);
+    --Layer: rgba(110, 30, 160, 0.7);
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    background: var(--Verydarkblue);
+}
+
+main {
+    background-color: var(--Darkdesaturatedblue);
+    height: 782px;
+    width: 328px;
+    margin: 88px auto;
+    border-radius: 5px;
+}
+
+.image {
+    background-image: url(images/image-header-mobile.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 240px;
+}
+
+#layer {
+    background-color: var(--Layer);
+    height: 100%;
+    width:100%;
+}
+
+/* section 2 */
+
+h1 {
+    color: var(--White);
+    text-align: center;
+    font-size: 1.8em;    
+    font-family: 'Inter', sans-serif; 
+    height: 115px;
+}
+
+span {
+    color: var(--Softviolet);
+}
+
+p {
+    color: var(--Slightlytransparentwhite);
+    font-family: 'Inter', sans-serif; 
+    text-align: center;
+    line-height: 25px;
+    height: 137px;
+}
+
+.stats {
+    color: var(--Slightlytransparentwhite);
+    line-height: 25px;
+}
+
+.amount {
+    font-weight: 700;
+    font-size: 1.45em;
+    color: var(--White);
+}
+
+.concept {
+    text-transform: uppercase;
+    margin-bottom: 33px;
+    font-size: 0.8em;
+    
+}
+
+.last {
+    text-transform: uppercase;
+}
+
+
+/* media queries */
+@media screen and (min-width: 1200px) {
+    main {
+        width: 1110px;
+        height: 448px;
+        display: flex;
+        flex-direction: row-reverse;
+        
+    }
+    .image {
+        width: 540px;
+        height: 100%;
+        background-image: url(images/image-header-desktop.jpg);
+        
+    }
+    .section2 {
+        padding: 75px 70px;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    p {
+        margin-right: 70px;
+    }
+    .stats {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* footer */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--White);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
